@@ -1,0 +1,56 @@
+body {
+  font-family: "Arial",sans-serif;
+  padding-left: 10px;
+  /*background-image: url("images/tufts.png");
+  https://css-tricks.com/snippets/css/transparent-background-images -- to get to background opacity/*/
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+
+}
+
+/*img {
+  height: 400px;
+}*/
+
+.category {
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+
+.icon {
+  height: 30px
+}
+
+.book {
+  font-style: italic;
+  list-style-image: url(images/book.png);
+}
+
+.question {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.podcast {
+  list-style-image: url(images/headphones.png);
+}
+
+#profile-pic {
+  height: 400px;
+}
+
+#background-img {
+  opacity:.2
+}
+
+/*ul{
+  list-style-image: url(images/book.png);
+}*/
