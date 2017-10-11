@@ -1,74 +1,7 @@
-div.header-wrapper{
-  background-color: darkblue;
-  width: 980px;
-}
-
-nav{
-  display: inline-block;
-  color: white;
-}
-
-
-nav ul{
-  list-style: none;
-  float: right;
-
-}
-
-nav li a{
-  text-decoration: none;
-}
-
-nav li a:visited{
-  color: white;
-}
-
-div.clearfix{
-
-}
-
-
-
-
-
-
-
-
-
-
 body {
   font-family: "Arial",sans-serif;
-  padding-left: 10px;
   /*background-image: url("images/tufts.png");
   https://css-tricks.com/snippets/css/transparent-background-images -- to get to background opacity/*/
-}
-
-h1 {
-  color: blue;
-  text-align: center;
-  font-weight: bold;
-}
-
-h3 {
-
-}
-
-/*img {
-  height: 400px;
-}*/
-
-.category {
-  font-weight: bold;
-  text-transform: uppercase;
-  }
-
-.icon {
-  height: 30px
-}
-
-.book {
-  font-style: italic;
-  list-style-image: url(images/book.png);
 }
 
 .question {
@@ -77,18 +10,107 @@ h3 {
   text-transform: uppercase;
 }
 
-.podcast {
-  list-style-image: url(images/headphones.png);
+div.clearfix{
+  clear: both;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+h3{
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: darkblue;
+  width: 980px;
+  color: white;
+  /*float: right;*/
+  /*margin: 0 auto;*/
+  text-align: center;
+}
+
+
+nav ul{
+  list-style: none;
+  padding: 10px 0px;
+
+}
+
+nav li{
+  display: inline-block;
+  padding: 5px 10px;
+  border-right: 1px solid white;
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:visited{
+  color: white;
+}
+
+div.clearfix{
+  clear: both;
+}
+
+li#left{
+  border-right: 0px solid white;
+}
+
+div.center{
+  width: 980px;
+  /*border: 2px solid black;*/
+}
+
+div.pic{
+  margin: 0 auto;
+  /*border: 5px dashed blue;*/
+  width: 500px;
+  text-align: center;
 }
 
 #profile-pic {
   height: 400px;
 }
 
-#background-img {
-  opacity:.2
+div.column{
+width: 50%;
+float: left;
+/*box-sizing: border-box;*/
 }
 
-/*ul{
+div.element{
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.book {
   list-style-image: url(images/book.png);
-}*/
+  font-style: italic;
+  /* FIXME: how do i have the text align to the bullet appropriately? */
+}
+
+.podcast {
+  list-style-image: url(images/headphones.png);
+}
+
+
+.icon {
+  height: 30px
+}
