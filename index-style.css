@@ -4,6 +4,9 @@ body {
   https://css-tricks.com/snippets/css/transparent-background-images -- to get to background opacity/*/
 }
 
+p{
+  margin: 0px;
+}
 .question {
   color: red;
   font-weight: bold;
@@ -26,6 +29,7 @@ h2{
   font-weight: bold;
   margin: 0;
   padding: 0;
+  background-color: lightblue;
 }
 
 h3{
@@ -36,7 +40,7 @@ h3{
 
 nav{
   background-color: darkblue;
-  width: 980px;
+  width: 100%;
   color: white;
   /*float: right;*/
   /*margin: 0 auto;*/
@@ -74,7 +78,7 @@ li#left{
 }
 
 div.center{
-  width: 980px;
+  width: 100%;
   /*border: 2px solid black;*/
 }
 
@@ -89,15 +93,29 @@ div.pic{
   height: 400px;
 }
 
-div.column{
-width: 50%;
+div.column-left{
+width: calc(50%-10px);
 float: left;
-/*box-sizing: border-box;*/
+margin: 20px 10px 0px 0px;
+/*border: 1px solid black;*/
+/* FIXME: think about what this becomes in responsive framework */
+/* FIXME: these arent acting right, they are not 50% of screen */
+}
+
+div.column-right{
+width: calc(50%-10px);
+float: left;
+margin: 20px 0px 0px 10px;
+/*border: 1px solid black;*/
+/* FIXME: think about what this becomes in responsive framework */
 }
 
 div.element{
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  /*width: 100%;*/
+  margin-bottom: 10px;
   box-sizing: border-box;
+/* FIXME: how do i make the width be 100% of the wrapper */
 }
 
 .book {
@@ -112,5 +130,51 @@ div.element{
 
 
 .icon {
-  height: 30px
+  height: 15px
+}
+
+div.leftfloat{
+  float: left;
+}
+
+div.footer{
+  width: 100%;
+  background-color: gray;
+  margin: 0px;
+  /*border: 2px solid black;*/
+}
+
+div.footerleft{
+  float: left;
+  color: white;
+  font-weight: bold;
+  padding: 12.5px 0px 0px 20px;
+}
+
+div.social{
+  height: 30px;
+  width: 30px;
+  float: right;
+  border-radius: 30px;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  /* FIXME: align it center somehow */
+}
+
+div.social a{
+  text-decoration: none;
+  color: white;
+}
+
+div.social a:visited{
+  color: white;
+}
+
+div.social-wrapper{
+  float: right;
+  padding: 5px 20px 5px 0px;
+  /*border: 2px solid black;*/
+  /* FIXME: why is the bottom of my footer acting as a link?!? */
 }
