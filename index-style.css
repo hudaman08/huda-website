@@ -69,10 +69,6 @@ nav li a:visited{
   color: white;
 }
 
-div.clearfix{
-  clear: both;
-}
-
 li#left{
   border-right: 0px solid white;
 }
