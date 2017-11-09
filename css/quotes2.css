@@ -1,0 +1,141 @@
+body {
+  font-family: "Arial",sans-serif;
+  /*background-image: url("images/tufts.png");
+  https://css-tricks.com/snippets/css/transparent-background-images -- to get to background opacity/*/
+}
+
+div.clearfix{
+  clear: both;
+}
+
+p{
+  margin: 0px;
+}
+
+/*header stuff*/
+
+nav{
+  background-color: darkblue;
+  width: 100%;
+  color: white;
+  /*float: right;*/
+  /*margin: 0 auto;*/
+  text-align: center;
+}
+
+nav ul{
+  list-style: none;
+  padding: 10px 0px;
+}
+
+nav li{
+  display: inline-block;
+  padding: 5px 10px;
+  border-right: 1px solid white;
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:visited{
+  color: white;
+}
+
+li#left{
+  border-right: 0px solid white;
+}
+
+/*body stuff*/
+
+div.randomwrapper{
+  width: 100%;
+}
+
+div.quote{
+  display: none;
+
+}
+
+div.buttonwrapper{
+  width: 150px;
+  float: left;
+}
+
+div#randombutton {
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  border: 2px black solid;
+  text-align: center;
+  padding-top: 0px;
+  background-color: lightblue;
+  font-weight: bold;
+  float: left;
+  margin-bottom: 30px;
+}
+
+div#favoritebutton{
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  border: 2px black solid;
+  text-align: center;
+  padding-top: 0px;
+  background-color: lightblue;
+  font-weight: bold;
+  float: left;
+}
+
+div#randomquote{
+  width: 600px;
+  height: 200px;
+  background-color: lightgray;
+  border: 2px black solid;
+  margin: 0px 30px;
+  float: right;
+  display: none;
+}
+
+div.favoriteswrapper{
+
+}
+
+
+
+/*footer stuff*/
+
+div.footerleft{
+  float: left;
+  color: white;
+  font-weight: bold;
+  padding: 12.5px 0px 0px 20px;
+}
+
+div.social{
+  height: 30px;
+  width: 30px;
+  float: right;
+  border-radius: 30px;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  /* FIXME: align it center somehow */
+}
+
+div.social a{
+  text-decoration: none;
+  color: white;
+}
+
+div.social a:visited{
+  color: white;
+}
+
+div.social-wrapper{
+  float: right;
+  padding: 5px 20px 5px 0px;
+  /*border: 2px solid black;*/
+  /* FIXME: why is the bottom of my footer acting as a link?!? */
