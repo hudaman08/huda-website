@@ -12,6 +12,9 @@ p{
   margin: 0px;
 }
 
+span.italics{
+  font-style: italic;
+}
 /*header stuff*/
 
 nav{
@@ -53,11 +56,6 @@ div.randomwrapper{
   width: 100%;
 }
 
-div.quote{
-  display: none;
-
-}
-
 div.buttonwrapper{
   width: 150px;
   float: left;
@@ -82,7 +80,7 @@ div#favoritebutton{
   border-radius: 40px;
   border: 2px black solid;
   text-align: center;
-  padding-top: 0px;
+  padding-top: 1px;
   background-color: pink;
   font-weight: bold;
   float: left;
@@ -139,7 +137,7 @@ div#clearfav {
   float: right;
 }
 
-div.favoritequote {
+div.quote {
   width: 30%;
   height: 200px;
   background-color: lightgray;
@@ -147,6 +145,7 @@ div.favoritequote {
   margin: 0px 30px;
   float: left;
   margin: 10px 3% 10px 0%;
+  display: none;
 }
 
 /*footer stuff*/

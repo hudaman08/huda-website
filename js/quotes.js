@@ -2,12 +2,20 @@ $(document).ready(function() {
 
   var favorites = ",";
   var random;
+  var favArray;
 
   function seeFav() {
     if (favorites === ",") {
       $("div.favoriteswrapper").hide()
     }  else {
       $("div.favoriteswrapper").show()
+    }
+
+    favArray = favorites.split(",");
+
+    for (var i = 2; i < favArray.length ; i++){
+      $("#Q"+favArray[i-1]).show();
+      // console.log(favArray[i-1]+"hi");
     }
   };
 
@@ -26,7 +34,7 @@ $(document).ready(function() {
   seeFav();
 
   $("div#randombutton").click(function() {
-    random = Math.floor((Math.random() * 5) + 1);
+    random = Math.floor((Math.random() * 10) + 1);
 
     var randomText = $("#Q" + random).text();
 
@@ -41,10 +49,15 @@ $(document).ready(function() {
 
   $("div#favoritebutton").click(function() {
     favorites = favorites + random + ",";
-    alert(favorites);
+    favoriteButton();
+    seeFav();
+    // alert("fav: "+favorites+"  array: "+favArray+"len: "+favArray.length);
+  });
+
+  $("div#clearfav").click(function() {
+    favorites = ",";
     favoriteButton();
     seeFav();
   });
-
 
 });
