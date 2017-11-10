@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
-  var favorites = ",";
+  var favorites = Cookies.get("favs");
+  if (favorites === undefined) {
+    var favorites = ","
+  }
+
+  // var favorites = ","
   var random;
   var favArray;
 
@@ -20,6 +25,7 @@ $(document).ready(function() {
   };
 
   function favoriteButton() {
+    seeFav();
     if (favorites.indexOf(","+random) > -1)
       {
         $("div#favorited").show(),
@@ -49,6 +55,7 @@ $(document).ready(function() {
 
   $("div#favoritebutton").click(function() {
     favorites = favorites + random + ",";
+    Cookies.set("favs",favorites);
     favoriteButton();
     seeFav();
     // alert("fav: "+favorites+"  array: "+favArray+"len: "+favArray.length);
@@ -56,6 +63,7 @@ $(document).ready(function() {
 
   $("div#clearfav").click(function() {
     favorites = ",";
+    Cookies.set("favs",favorites);
     favoriteButton();
     seeFav();
   });
