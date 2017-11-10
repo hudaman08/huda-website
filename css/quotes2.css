@@ -77,15 +77,30 @@ div#randombutton {
 }
 
 div#favoritebutton{
-  width: 150px;
+  width: 80px;
   height: 50px;
   border-radius: 40px;
   border: 2px black solid;
   text-align: center;
   padding-top: 0px;
-  background-color: lightblue;
+  background-color: pink;
   font-weight: bold;
   float: left;
+  display: none;
+}
+
+div#favorited{
+  width: 80px;
+  height: 50px;
+  border-radius: 60px;
+  border: 2px black solid;
+  text-align: center;
+  padding-top: 0px;
+  background-color: gray;
+  font-weight: bold;
+  float: left;
+  margin-left: 10px;
+  display: none;
 }
 
 div#randomquote{
@@ -99,10 +114,40 @@ div#randomquote{
 }
 
 div.favoriteswrapper{
-
+  display: none;
+  width: 100%
 }
 
+div.subheader-wrapper{
+  width: 100%;
+  float: left;
+}
 
+div.subheader{
+  width: 400px;
+}
+
+div#clearfav {
+  width: 80px;
+  height: 50px;
+  border-radius: 40px;
+  border: 2px black solid;
+  text-align: center;
+  padding-top: 0px;
+  background-color: green;
+  font-weight: bold;
+  float: right;
+}
+
+div.favoritequote {
+  width: 30%;
+  height: 200px;
+  background-color: lightgray;
+  border: 2px black solid;
+  margin: 0px 30px;
+  float: left;
+  margin: 10px 3% 10px 0%;
+}
 
 /*footer stuff*/
 
