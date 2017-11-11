@@ -64,8 +64,10 @@ $(document).ready(function() {
   $("div#clearfav").click(function() {
     favorites = ",";
     Cookies.set("favs",favorites);
+    $(".quote").hide();
     favoriteButton();
     seeFav();
+
   });
 
 });
