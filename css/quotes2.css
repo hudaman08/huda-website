@@ -115,7 +115,7 @@ div#favorited{
 
 div#randomquote{
   width: 600px;
-  height: 200px;
+  height: 300px;
   /*background-color: lightgray;
   border: 2px black solid;*/
   margin: 0px 30px;
@@ -165,8 +165,7 @@ div#clearfav {
 div.quote {
   width: 30%;
   height: 200px;
-  background-color: lightgray;
-  border: 2px black solid;
+  border-bottom: 2px black solid;
   float: left;
   margin: 10px 3% 10px 0%;
   padding: 5px;
@@ -182,6 +181,7 @@ div.quote {
   div#randomquote{
     width: 80%;
     margin: 10px 10%;
+    height: 400px;
 
   }
 }
