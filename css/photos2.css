@@ -77,20 +77,37 @@ div.main-photo{
 
 div.prev-photo{
   width: 20%;
-  height: 400px;
+  height: 350px;
+  margin-top: 25px;
+  /*background-color: rgba(7, 97, 242, 0.5);*/
   float: left;
+  /*display: none;*/
 }
 
 div.next-photo{
   width: 20%;
-  height: 400px;
+  height: 350px;
+  margin-top: 25px;
   float: right;
+  /*display: none;*/
 }
 
 div.navigation{
   font-size: 40pt;
-  margin-top: 150px;
+  background-color: rgba(7, 97, 242, 0.5);
   text-align: center;
+
+  /*display: none;*/
+}
+
+#next {
+    margin-top: 150px;
+    display: none;
+}
+
+#prev {
+    margin-top: 150px;
+    display: none;
 }
 
 /*photos library*/

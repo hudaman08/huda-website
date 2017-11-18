@@ -133,18 +133,6 @@ div.leftfloat{
   float: left;
 }
 
-/*main photo section*/
-
-div.main-photo-wrapper {
-    width: 70%;
-    height: 400px;
-    /*background-image: url("../photos/gallery1.jpg");*/
-    background-color: gray;
-}
-
-
-
-
 /*footer stuff*/
 
 div.footer{
