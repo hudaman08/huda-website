@@ -8,8 +8,8 @@ div.image{
   height: 300px;
   margin: 10px;
   border: 2px solid black;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 @media all and (min-width:301px) and (max-width:800px){
