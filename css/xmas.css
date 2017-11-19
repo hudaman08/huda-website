@@ -1,0 +1,148 @@
+body {
+  font-family: "Arial",sans-serif;
+  /*background-image: url("images/tufts.png");
+  https://css-tricks.com/snippets/css/transparent-background-images -- to get to background opacity/*/
+}
+
+div.clearfix{
+  clear: both;
+}
+
+p{
+  margin: 0px;
+}
+
+span.italics{
+  font-style: italic;
+}
+/*header stuff*/
+
+@media all and (max-width:500px){
+  /* FIXME: do something with nav */
+}
+
+
+nav{
+  background-color: darkblue;
+  width: 100%;
+  color: white;
+  /*float: right;*/
+  /*margin: 0 auto;*/
+  text-align: center;
+}
+
+nav ul{
+  list-style: none;
+  padding: 10px 0px;
+}
+
+nav li{
+  display: inline-block;
+  padding: 5px 10px;
+  border-right: 1px solid white;
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:visited{
+  color: white;
+}
+
+li#left{
+  border-right: 0px solid white;
+}
+
+/*xmas section*/
+
+div.intro-wrapper{
+  width: 100%;
+  margin: 20px 0px;
+}
+
+div.intro{
+  background-color: rgba(255, 0, 0, 0.5);
+  height: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div.video-wrapper{
+  width: 100%
+}
+
+div.video{
+  width: 560px;
+  margin: 0 auto;
+}
+
+div.play-game{
+  height: 40px;
+  width: 150px;
+  border-radius: 40px;
+  background-color: green;
+  float: right;
+  text-align: center;
+  padding-top: 20px;
+}
+
+div.game-wrapper{
+  /*height: 600px;*/
+  width: 100%;
+  background-color: lightblue;
+  display: none;
+}
+
+div.question{
+  display: none;
+  Width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  background-color: lightgray;
+}
+
+
+/*footer stuff*/
+
+div.footer{
+  width: 100%;
+  background-color: gray;
+  margin: 0px;
+  /*border: 2px solid black;*/
+}
+
+div.footerleft{
+  float: left;
+  color: white;
+  font-weight: bold;
+  padding: 12.5px 0px 0px 20px;
+}
+
+div.social{
+  height: 30px;
+  width: 30px;
+  float: right;
+  border-radius: 30px;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  /* FIXME: align it center somehow */
+}
+
+div.social a{
+  text-decoration: none;
+  color: white;
+}
+
+div.social a:visited{
+  color: white;
+}
+
+div.social-wrapper{
+  float: right;
+  padding: 5px 20px 5px 0px;
+  /*border: 2px solid black;*/
+  /* FIXME: why is the bottom of my footer acting as a link?!? */
