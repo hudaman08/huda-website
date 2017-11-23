@@ -64,7 +64,7 @@ div.intro-wrapper{
 
 div.intro{
   background-color: rgba(255, 0, 0, 0.5);
-  height: 250px;
+  height: 150px;
   width: 80%;
   margin: 0 auto;
 }
@@ -78,7 +78,7 @@ div.video{
   margin: 0 auto;
 }
 
-div.play-game{
+#play-game{
   height: 40px;
   width: 150px;
   border-radius: 40px;
@@ -92,17 +92,68 @@ div.game-wrapper{
   /*height: 600px;*/
   width: 100%;
   background-color: lightblue;
-  display: none;
+  /*display: none;*/
 }
 
 div.question{
   display: none;
-  Width: 80%;
-  margin: 0 auto;
+  Width: 75%;
+  /*float: left;*/
   height: 300px;
   background-color: lightgray;
+  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
+div.hint{
+  display: none;
+  Width: 75%;
+  /*float: left;*/
+  margin: 0 auto;
+  height: 300px;
+  background-color: orange;
+}
+
+div.task{
+  display: none;
+  Width: 75%;
+  /*float: left;*/
+  margin: 0 auto;
+  height: 300px;
+  background-color: pink;
+}
+
+div.answer-wrapper{
+  width: 75%;
+  margin: 0 auto;
+}
+
+#answer{
+  float: left;
+  margin-left: 30px;
+  margin-top: 6px;
+  height: 20px;
+  width: 400px;
+
+  /*margin: 0 auto;
+  display: block;*/
+}
+
+#submit-button{
+  height: 40px;
+  width: 150px;
+  border-radius: 40px;
+  background-color: darkblue;
+  float: right;
+  text-align: center;
+  padding-top: 20px;
+  /*margin: 0 auto;
+  display: block;*/
+}
+
+div.answers{
+  display: none;
+}
 
 /*footer stuff*/
 
