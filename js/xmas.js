@@ -4,7 +4,7 @@ $(document).ready(function() {
   var level = 1;
   var givenAnswer;
   var correctAnswer;
-  var maxlevel = 6;
+  var maxLevel = 6;
   // var correctAnswer = $("#A"+level).html();
 
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
     $("div.game-wrapper").hide(function() {
       $("div.hint").hide();
     });
-    if (level == maxlevel) {
+    if (level == maxLevel) {
       $("div.winner-circle-wrapper").show();
     } else {
         hint = 0;
