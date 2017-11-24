@@ -4,7 +4,7 @@ $(document).ready(function() {
   var level = 1;
   var givenAnswer;
   var correctAnswer;
-  var maxlevel = 3;
+  var maxlevel = 6;
   // var correctAnswer = $("#A"+level).html();
 
 
@@ -19,16 +19,15 @@ $(document).ready(function() {
   }
 
   function rightAnswer() {
+    $("div.game-wrapper").hide(function() {
+      $("div.hint").hide();
+    });
     if (level == maxlevel) {
-      alert("You winnnnnn")
+      $("div.winner-circle-wrapper").show();
     } else {
         hint = 0;
-        $("div.game-wrapper").hide(function() {
-          $("div.hint").hide(function() {
-            $("div.T"+level).show(function() {
-              $("div.task-wrapper").show();
-            });
-          });
+        $("div.T"+level).show(function() {
+          $("div.task-wrapper").show();
         });
     }
   }
@@ -41,15 +40,14 @@ $(document).ready(function() {
   function showQuestion() {
     level = parseInt(level) + 1;
     $("div.question").hide(function() {
-      $("div.task").hide(function() {
-        $("div.task-wrapper").hide(function() {
+      $("div.task-wrapper").hide(function() {
+        $("div.task").hide(function() {
           $("div#Q"+level).show(function() {
             $("div.game-wrapper").show();
           });
         });
       });
     });
-  alert("YAY next question")
   }
 
   function showHint() {
@@ -57,7 +55,7 @@ $(document).ready(function() {
       $("div.hint.Q"+level+".H"+hint).show();
         // showQuestion();
      } else {
-       alert("That was sad... here's the next question");
+       alert("That was sad... here's the next task");
        rightAnswer();
      }
   }
@@ -68,11 +66,12 @@ $(document).ready(function() {
   showHint();
 
   $("#play-game").click(function() {
-    $("div.video-wrapper").fadeOut(3000);
-    showQuestion();
-    // $("div#Q" + level).show();
-    $("div.game-wrapper").delay(3000).slideDown(3000);
-    level = 1;
+    // setTimeout(showQuestion(),4000);
+    $("div.video-wrapper").fadeOut(2000);
+    $("div#Q" + level).show();
+    $("div.game-wrapper").delay(2000).slideDown(2000);
+
+    // level = 1;
   });
 
 });

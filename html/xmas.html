@@ -26,7 +26,7 @@
     <div class="intro-wrapper">
       <div class = "intro">
         <p>
-          INTRO TEXT HERE
+          Hit on: About me -- coding // about Sujata // instructions // sujata can't answer, she gets to choose 1 person, but you can only choice someone 1x fpr the entire game so choose wisely/ put people on the spot!
         </p>
       </div>
     </div>
@@ -47,22 +47,35 @@
 
     <div class = "game-wrapper">
       <div class = "question" id = "Q1">
-        <p>
-          Prompt #1
-        </p>
+        <p>Let's start easy:</p>
+        <p>What is Sujata's birthday, including the year?</p>
+        <p>Format must MM/DD/YY</p>
       </div>
 
       <div class = "question" id = "Q2">
-        <p>
-          Prompt #2
+        <p>What did Sujata say was her favorite fast food restaurant?
         </p>
       </div>
 
       <div class = "question" id = "Q3">
-        <p>
-          Prompt #3
-        </p>
+        <p>For her favorite beverage, Sujata chose coffee and what other beverage?</p>
       </div>
+
+      <div class = "question" id = "Q4">
+        <p>What musical did Sujata watch this month? (according to her sheet at least)</p>
+      </div>
+
+      <div class = "question" id = "Q5">
+        <p>For her disliked colors, Sujata listed ____________, _________ - Anything too bright!</p>
+        <p>Yes i need both answers -- listed in alphabetical order with a comma and space, please #codingnewbie
+      </div>
+
+      <div class = "question" id = "Q6">
+        <p>Now for the hardest one yet:</p>
+        <p>In the random items section, Sujata noted "Cute Coffee Mugs" and what "item"?</p>
+        <p>Don't worry the hints will help. Singular version of this word, please</p>
+      </div>
+
 
       <div class = "answer-wrapper">
         <input type="text" id="answer">
@@ -81,13 +94,11 @@
           Question 1 -- Hint 1
         </p>
       </div>
-
       <div class = "hint Q1 H2">
         <p>
           Question 1 -- Hint 2
         </p>
       </div>
-
       <div class = "hint Q1 H3">
         <p>
           Question 1 -- Hint 3
@@ -99,13 +110,11 @@
           Question 2 -- Hint 1
         </p>
       </div>
-
       <div class = "hint Q2 H2">
         <p>
           Question 2 -- Hint 2
         </p>
       </div>
-
       <div class = "hint Q2 H3">
         <p>
           Question 2 -- Hint 3
@@ -117,13 +126,11 @@
           Question 3 -- Hint 1
         </p>
       </div>
-
       <div class = "hint Q3 H2">
         <p>
           Question 3 -- Hint 2
         </p>
       </div>
-
       <div class = "hint Q3 H3">
         <p>
           Question 3 -- Hint 3
@@ -131,20 +138,66 @@
       </div>
     </div>
 
-  <!-- response input -->
+    <div class = "hint Q4 H1">
+      <p>
+        Question 4 -- Hint 1
+      </p>
+    </div>
+    <div class = "hint Q3 H2">
+      <p>
+        Question 4 -- Hint 2
+      </p>
+    </div>
+    <div class = "hint Q4 H3">
+      <p>
+        Question 4 -- Hint 3
+      </p>
+    </div>
+  </div>
 
+  <div class = "hint Q5 H1">
+    <p>
+      Question 5 -- Hint 1
+    </p>
+  </div>
+  <div class = "hint Q5 H2">
+    <p>
+      Question 5 -- Hint 2
+    </p>
+  </div>
+  <div class = "hint Q5 H3">
+    <p>
+      Question 5 -- Hint 3
+    </p>
+  </div>
+</div>
 
+<div class = "hint Q6 H1">
+  <p>
+    Question 6 -- Hint 1
+  </p>
+</div>
+<div class = "hint Q6 H2">
+  <p>
+    Question 6 -- Hint 2
+  </p>
+</div>
+<div class = "hint Q6 H3">
+  <p>
+    Question 6 -- Hint 3
+  </p>
+</div>
+</div>
 
   <!-- Answers -->
-  <div class = "answers" id = "A1">Answer 1</div>
-
-  <div class = "answers" id = "A2">Answer 2</div>
-
-  <div class = "answers" id = "A3">Answer 3</div>
-
+  <div class = "answers" id = "A1">03/31/83</div>
+  <div class = "answers" id = "A2">Taco Bell</div>
+  <div class = "answers" id = "A3">Pepsi</div>
+  <div class = "answers" id = "A4">Aladdin</div>
+  <div class = "answers" id = "A5">orange, yellow</div>
+  <div class = "answers" id = "A4">massage</div>
 
 <!-- task section -->
-<!-- task section (in game wrapper)-->
     <div class = "task-wrapper">
       <div class = "task T1">
         <p>
@@ -163,6 +216,24 @@
           Task 3
         </p>
       </div>
+
+      <div class = "task T4">
+        <p>
+          Task 4
+        </p>
+      </div>
+
+      <div class = "task T5">
+        <p>
+          Task 5
+        </p>
+      </div>
+
+      <div class = "task T6">
+        <p>
+          Task 6
+        </p>
+      </div>
       <button id="task-complete">Task Completed</button>
       <div class = "clearfix"></div>
     </div>
@@ -171,6 +242,13 @@
 
 
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MJLOCAWkRoc?rel=0" frameborder="0" allowfullscreen></iframe> -->
+
+    <!-- winners circle section -->
+    <div class = "winner-circle-wrapper">
+      <div class ="winner-circle">
+        <p>YOU WON</p>
+      </div>
+    </div>
 
     <!-- Footer section -->
     <div class="clearfix"></div>
@@ -190,12 +268,29 @@
       <div class="clearfix"></div>
     </div>
 
-    <div class = "questions">
-      <p>
+    <ol class = "questions">
+      <li>
         How do I get the play game button to be next to the video?
-      </p>
-    </div>
+      </li>
+    </ol>
 
+    <ol class = "to-do">
+      <li>
+        progress bar
+      </li>
+      <li>
+        Save to cookies
+      </li>
+      <li>
+        Write out content
+      </li>
+      <li>
+        Style it all
+      </li>
+      <li>
+        Empty response bar (and have Q1 be a date selector)
+      </li>
+    </ol >
 
     <!-- script references -->
       <script src="../js/cookies.min.js"></script>

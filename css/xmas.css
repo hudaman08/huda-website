@@ -175,6 +175,19 @@ div.task{
   display: block;*/
 }
 
+div.winner-circle-wrapper{
+  width: 100%;
+  display: none;
+}
+
+div.winner-circle{
+  Width: 75%;
+  /*float: left;*/
+  margin: 0 auto;
+  height: 300px;
+  background-color: lightgreen;
+}
+
 /*footer stuff*/
 
 div.footer{
