@@ -92,7 +92,7 @@ div.game-wrapper{
   /*height: 600px;*/
   width: 100%;
   background-color: lightblue;
-  /*display: none;*/
+  display: none;
 }
 
 div.question{
@@ -110,8 +110,9 @@ div.hint{
   Width: 75%;
   /*float: left;*/
   margin: 0 auto;
-  height: 300px;
+  height: 100px;
   background-color: orange;
+  margin-bottom: 5px;
 }
 
 div.task{
