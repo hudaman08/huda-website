@@ -19,14 +19,15 @@ $(document).ready(function() {
   }
 
   function rightAnswer() {
-    if (level === maxlevel) {
+    if (level == maxlevel) {
       alert("You winnnnnn")
     } else {
-        level = parseInt(level) + 1;
         hint = 0;
-        $("div.question").hide(function() {
+        $("div.game-wrapper").hide(function() {
           $("div.hint").hide(function() {
-            $("div#Q"+level).show();
+            $("div.T"+level).show(function() {
+              $("div.task-wrapper").show();
+            });
           });
         });
     }
@@ -38,12 +39,17 @@ $(document).ready(function() {
   }
 
   function showQuestion() {
+    level = parseInt(level) + 1;
     $("div.question").hide(function() {
-      $("div.hint").hide(function() {
-        $("div#Q"+level).show();
-
+      $("div.task").hide(function() {
+        $("div.task-wrapper").hide(function() {
+          $("div#Q"+level).show(function() {
+            $("div.game-wrapper").show();
+          });
+        });
+      });
     });
-  });
+  alert("YAY next question")
   }
 
   function showHint() {
@@ -57,6 +63,7 @@ $(document).ready(function() {
   }
 
   $("#submit-button").click(checkAnswer);
+  $("#task-complete").click(showQuestion);
 
   showHint();
 

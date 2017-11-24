@@ -115,14 +115,7 @@ div.hint{
   margin-bottom: 5px;
 }
 
-div.task{
-  display: none;
-  Width: 75%;
-  /*float: left;*/
-  margin: 0 auto;
-  height: 300px;
-  background-color: pink;
-}
+
 
 div.answer-wrapper{
   width: 75%;
@@ -154,6 +147,32 @@ div.answer-wrapper{
 
 div.answers{
   display: none;
+}
+
+div.task-wrapper{
+  width: 100%;
+  display: none;
+}
+
+div.task{
+  display: none;
+  Width: 75%;
+  /*float: left;*/
+  margin: 0 auto;
+  height: 300px;
+  background-color: pink;
+}
+
+#task-complete{
+  height: 40px;
+  width: 150px;
+  border-radius: 40px;
+  background-color: yellow;
+  float: right;
+  text-align: center;
+  padding-top: 20px;
+  /*margin: 0 auto;
+  display: block;*/
 }
 
 /*footer stuff*/
