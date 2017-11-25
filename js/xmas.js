@@ -4,7 +4,7 @@ $(document).ready(function() {
   var level = 1;
   var givenAnswer;
   var correctAnswer;
-  var maxLevel = 2;
+  var maxLevel = 6;
   // var correctAnswer = $("#A"+level).html();
 
 
