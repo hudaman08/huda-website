@@ -4,7 +4,7 @@ $(document).ready(function() {
   var level = 1;
   var givenAnswer;
   var correctAnswer;
-  var maxLevel = 6;
+  var maxLevel = 2;
   // var correctAnswer = $("#A"+level).html();
 
 
@@ -97,7 +97,9 @@ function startTimer () {
   $("#play-game").click(function() {
     // setTimeout(showQuestion(),4000);
     $("div.video-wrapper").fadeOut(2000);
+    $("div.intro").fadeOut(2000);
     $("div#Q" + level).show();
+    $("div.progress-wrapper").delay(2000).slideDown(2000);
     $("div.game-wrapper").delay(2000).slideDown(2000);
 
     // level = 1;

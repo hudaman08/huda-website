@@ -69,6 +69,21 @@ div.intro{
   margin: 0 auto;
 }
 
+div.progress-wrapper{
+  display: none;
+  /*float: right;*/
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: lightgray;
+}
+
+span.progress-bar {
+  margin-right: 10px;
+  font-weight: bold;
+  color: black;
+}
+
 div.video-wrapper{
   width: 100%
 }
