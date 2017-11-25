@@ -49,6 +49,7 @@ function startTimer () {
   function rightAnswer() {
     startTimer();
     hint = 0;
+    // $("#answer").html("");
     $("div.game-wrapper").hide(function() {
       $("div.hint").hide(function() {
         $("div.T"+level).show(function() {
@@ -64,6 +65,7 @@ function startTimer () {
   }
 
   function showQuestion() {
+    $("#P"+level).css("color","green");
     $("div.question").hide(function() {
       $("div.task-wrapper").hide(function() {
         $("div.task").hide();
