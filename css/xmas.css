@@ -149,6 +149,25 @@ div.answers{
   display: none;
 }
 
+div#timer {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+  left: 10%;
+  top: 15%;
+  z-index: 1;
+  font-size: 60pt;
+  font-weight: bold;
+  border: 2px black solid;
+  background: lightgray;
+  box-shadow: 5px 5px 5px #888888;
+  text-align: middle;
+  display: none;
+  /*padding-top: 20%
+  padding left: 10%*/
+}
+
 div.task-wrapper{
   width: 100%;
   display: none;

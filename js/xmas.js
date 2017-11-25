@@ -4,7 +4,7 @@ $(document).ready(function() {
   var level = 1;
   var givenAnswer;
   var correctAnswer;
-  var maxLevel = 6;
+  var maxLevel = 2;
   // var correctAnswer = $("#A"+level).html();
 
 
@@ -18,19 +18,45 @@ $(document).ready(function() {
     }
   }
 
-  function rightAnswer() {
-    $("div.game-wrapper").hide(function() {
-      $("div.hint").hide();
-    });
-    if (level == maxLevel) {
-      $("div.winner-circle-wrapper").show();
+// timer section
+
+function doSomething() {
+  // alert("YAY!");
+  $("div#timer").hide();
+  $("div#timer").html("Get Ready To Unwrap!!")
+}
+
+
+function startTimer () {
+  $("div#timer").show();
+  var timeLeft = 5;
+
+  var timerId = setInterval(countdown, 1000);
+
+  function countdown() {
+    if (timeLeft == 0) {
+      clearTimeout(timerId);
+      doSomething();
     } else {
-        hint = 0;
+      $("div#timer").html(timeLeft + " seconds remaining"),
+      // elem.innerHTML = ;
+      timeLeft--;
+    }
+  }
+}
+
+
+  function rightAnswer() {
+    startTimer();
+    hint = 0;
+    $("div.game-wrapper").hide(function() {
+      $("div.hint").hide(function() {
         $("div.T"+level).show(function() {
           $("div.task-wrapper").show();
         });
+      });
+    });
     }
-  }
 
   function wrongAnswer() {
     hint = parseInt(hint) + 1;
@@ -38,16 +64,19 @@ $(document).ready(function() {
   }
 
   function showQuestion() {
-    level = parseInt(level) + 1;
     $("div.question").hide(function() {
       $("div.task-wrapper").hide(function() {
-        $("div.task").hide(function() {
-          $("div#Q"+level).show(function() {
-            $("div.game-wrapper").show();
-          });
-        });
+        $("div.task").hide();
       });
     });
+    if (level == maxLevel) {
+      $("div.winner-circle-wrapper").show();
+    } else {
+      level = parseInt(level) + 1;
+      $("div#Q"+level).show(function() {
+        $("div.game-wrapper").show();
+      });
+    }
   }
 
   function showHint() {
@@ -63,7 +92,7 @@ $(document).ready(function() {
   $("#submit-button").click(checkAnswer);
   $("#task-complete").click(showQuestion);
 
-  showHint();
+  // showHint();
 
   $("#play-game").click(function() {
     // setTimeout(showQuestion(),4000);
