@@ -87,6 +87,7 @@ function startTimer () {
   function winningFunction() {
 
     $("body").css({"background-image": 'url("../audio/confetti.gif")', "background-size":"cover"  });
+    new Audio("../audio/winner-song.mp3").play()
     $("div.winner-circle-wrapper").show();
   }
 
