@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
   var hint = 0;
-  var level = 1;
+  var level = 6;
   var givenAnswer;
   var correctAnswer;
-  var maxLevel = 2;
+  var maxLevel = 6;
   // var correctAnswer = $("#A"+level).html();
 
 
@@ -29,13 +29,14 @@ function doSomething() {
 
 function startTimer () {
   $("div#timer").show();
-  var timeLeft = 5;
+  var timeLeft = 2;
 
   var timerId = setInterval(countdown, 1000);
 
   function countdown() {
     if (timeLeft == 0) {
       clearTimeout(timerId);
+      new Audio("../audio/buzzer.mp3").play()
       doSomething();
     } else {
       $("div#timer").html(timeLeft + " seconds remaining"),
@@ -49,6 +50,8 @@ function startTimer () {
   function rightAnswer() {
     startTimer();
     hint = 0;
+    $("#answer").attr("type", "text");
+     $("#answer").val("");
     // $("#answer").html("");
     $("div.game-wrapper").hide(function() {
       $("div.hint").hide(function() {
@@ -72,7 +75,7 @@ function startTimer () {
       });
     });
     if (level == maxLevel) {
-      $("div.winner-circle-wrapper").show();
+      winningFunction();
     } else {
       level = parseInt(level) + 1;
       $("div#Q"+level).show(function() {
@@ -81,12 +84,18 @@ function startTimer () {
     }
   }
 
+  function winningFunction() {
+
+    $("body").css({"background-image": 'url("../audio/confetti.gif")', "background-size":"cover"  });
+    $("div.winner-circle-wrapper").show();
+  }
+
   function showHint() {
     if (hint !== 4) {
       $("div.hint.Q"+level+".H"+hint).show();
         // showQuestion();
      } else {
-       alert("That was sad... here's the next task");
+       alert("That was sad... open a present to make you feel better");
        rightAnswer();
      }
   }

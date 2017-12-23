@@ -1,6 +1,9 @@
 body {
   font-family: "Arial",sans-serif;
-  /*background-image: url("images/tufts.png");
+  background-image: url("../images/xmas-border.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+    /*background-image: url("images/tufts.png");
   https://css-tricks.com/snippets/css/transparent-background-images -- to get to background opacity/*/
 }
 
@@ -9,7 +12,7 @@ div.clearfix{
 }
 
 p{
-  margin: 0px;
+  margin: 10px;
 }
 
 span.italics{
@@ -57,16 +60,22 @@ li#left{
 
 /*xmas section*/
 
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 div.intro-wrapper{
   width: 100%;
   margin: 20px 0px;
 }
 
 div.intro{
-  background-color: rgba(255, 0, 0, 0.5);
-  height: 150px;
+  background-color: rgba(211,211,211,0.5);
+  /*height: 150px;*/
   width: 80%;
   margin: 0 auto;
+  padding: 5px;
 }
 
 div.progress-wrapper{
@@ -88,25 +97,30 @@ div.video-wrapper{
   width: 100%
 }
 
-div.video{
+.video{
   width: 560px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin-left: 25%;
+  float: left;
 }
 
 #play-game{
   height: 40px;
   width: 150px;
   border-radius: 40px;
-  background-color: green;
-  float: right;
+  background-color: black;
+  float: left;
   text-align: center;
-  padding-top: 20px;
+  font-weight: bold;
+  color: white;
+  padding-top: 10px;
+  margin: 120px 0px 0px 30px;
 }
 
 div.game-wrapper{
-  /*height: 600px;*/
+  height: 600px;
   width: 100%;
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   display: none;
 }
 
@@ -114,10 +128,12 @@ div.question{
   display: none;
   Width: 75%;
   /*float: left;*/
-  height: 300px;
-  background-color: lightgray;
-  margin-bottom: 20px;
+  height: 250px;
+  background-color: rgba(40,188,7,0.5);
+  padding: 10px;
+  margin-top: 20px;
   margin: 0 auto;
+  font-size: 30pt;
 }
 
 div.hint{
@@ -125,9 +141,10 @@ div.hint{
   Width: 75%;
   /*float: left;*/
   margin: 0 auto;
-  height: 100px;
-  background-color: orange;
-  margin-bottom: 5px;
+  height: 50px;
+  background-color: rgba(40,188,7,0.5);
+  margin-bottom: 10px;
+  font-size: 20pt;
 }
 
 
@@ -135,27 +152,32 @@ div.hint{
 div.answer-wrapper{
   width: 75%;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #answer{
   float: left;
   margin-left: 30px;
   margin-top: 6px;
-  height: 20px;
+  height: 40px;
   width: 400px;
+  font-size: 25px;
 
   /*margin: 0 auto;
   display: block;*/
 }
 
 #submit-button{
+  margin-top: 5px;
   height: 40px;
   width: 150px;
   border-radius: 40px;
-  background-color: darkblue;
+  background-color: darkgreen;
   float: right;
+  color: white;
+  font-weight: bold;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   /*margin: 0 auto;
   display: block;*/
 }
@@ -185,6 +207,7 @@ div#timer {
 
 div.task-wrapper{
   width: 100%;
+  height: 600px;
   display: none;
 }
 
@@ -193,18 +216,24 @@ div.task{
   Width: 75%;
   /*float: left;*/
   margin: 0 auto;
-  height: 300px;
-  background-color: pink;
+  height: 450px;
+  background-color: rgba(237, 49, 49, 0.25);
+  font-size: 30px;
+  padding: 10px;
 }
 
 #task-complete{
   height: 40px;
   width: 150px;
   border-radius: 40px;
-  background-color: yellow;
+  background-color: darkred;
   float: right;
+  margin-right: 15%;
+  margin-top: 30px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  color: white;
+  font-weight: bold;
   /*margin: 0 auto;
   display: block;*/
 }
@@ -218,8 +247,13 @@ div.winner-circle{
   Width: 75%;
   /*float: left;*/
   margin: 0 auto;
-  height: 300px;
-  background-color: lightgreen;
+  height: 450px;
+  background-color: rgba(40,188,7,0.7);
+  font-size: 40pt;
+}
+
+.to-do{
+  display: none;
 }
 
 /*footer stuff*/
