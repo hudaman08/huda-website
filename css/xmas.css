@@ -93,6 +93,12 @@ span.progress-bar {
   color: black;
 }
 
+#reset {
+  /*float: right;*/
+  margin-left: 40%;
+  /*padding-left: 100px;*/
+}
+
 div.video-wrapper{
   width: 100%
 }

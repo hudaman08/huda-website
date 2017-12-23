@@ -117,4 +117,18 @@ function startTimer () {
     // level = 1;
   });
 
+  $("#reset").click(function(){
+    hint = 0;
+    level = 1;
+    $(".fa-tree").css("color","lightgray");
+    $("div.game-wrapper").hide(function(){
+      $("div.progress-wrapper").hide(function(){
+        $("div.video-wrapper").show(function(){
+          $("div.intro").show();
+        })
+      })
+    })
+  })
+
+
 });
