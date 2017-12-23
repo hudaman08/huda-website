@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var hint = 0;
-  var level = 6;
+  var level = 1;
   var givenAnswer;
   var correctAnswer;
   var maxLevel = 6;
