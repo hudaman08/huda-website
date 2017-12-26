@@ -23,13 +23,14 @@ $(document).ready(function() {
 function doSomething() {
   // alert("YAY!");
   $("div#timer").hide();
-  $("div#timer").html("Get Ready To Unwrap!!")
+  var gift = parseInt(level) + 1
+  $("div#timer").html("Get Ready To Unwrap Gift #"+gift+"!!")
 }
 
 
 function startTimer () {
   $("div#timer").show();
-  var timeLeft = 2;
+  var timeLeft = 20;
 
   var timerId = setInterval(countdown, 1000);
 
@@ -121,10 +122,14 @@ function startTimer () {
     hint = 0;
     level = 1;
     $(".fa-tree").css("color","lightgray");
+    $("body").css({"background-image": 'url("../images/xmas-border.jpg")', "background-size":"contain","background-repeat":"no-repeat"});
+    $("#answer").attr("type", "text");
     $("div.game-wrapper").hide(function(){
       $("div.progress-wrapper").hide(function(){
-        $("div.video-wrapper").show(function(){
-          $("div.intro").show();
+        $("div.winner-circle-wrapper").hide(function(){
+          $("div.video-wrapper").show(function(){
+            $("div.intro").show();
+          })
         })
       })
     })
