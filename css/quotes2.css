@@ -55,8 +55,42 @@ li#left{
   border-right: 0px solid white;
 }
 
+p.float{
+  float:left;
+}
+
 /*body stuff*/
 
+div.overview{
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+  left: 10%;
+  top: 15%;
+  z-index: 1;
+  border: 2px black solid;
+  background: lightgray;
+  box-shadow: 5px 5px 5px #888888;
+  /*padding-top: 20%
+  padding left: 10%*/
+}
+
+div.close{
+  float: right;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 45pt;
+}
+
+div.overviewText{
+  padding: 2.5%;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: middle;
+}
 
 div.randomwrapper{
   width: 100%;

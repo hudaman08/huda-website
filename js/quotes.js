@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  $(".close").click(function() {
+    $('.modal').hide();
+  });
+
   var favorites = Cookies.get("favs");
   if (favorites === undefined) {
     var favorites = ","
@@ -40,7 +44,7 @@ $(document).ready(function() {
   seeFav();
 
   $("div#randombutton").click(function() {
-    random = Math.floor((Math.random() * 10) + 1);
+    random = Math.floor((Math.random() * 13) + 1);
 
     var randomText = $("#Q" + random).text();
 

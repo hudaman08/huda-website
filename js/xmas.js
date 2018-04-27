@@ -18,6 +18,11 @@ $(document).ready(function() {
     }
   }
 
+  $(".close").click(function() {
+    $('.modal').hide();
+  });
+
+
 // timer section
 
 function doSomething() {
@@ -30,7 +35,7 @@ function doSomething() {
 
 function startTimer () {
   $("div#timer").show();
-  var timeLeft = 20;
+  var timeLeft = 10;
 
   var timerId = setInterval(countdown, 1000);
 
@@ -40,7 +45,7 @@ function startTimer () {
       new Audio("../audio/buzzer.mp3").play()
       doSomething();
     } else {
-      $("div#timer").html(timeLeft + " seconds remaining"),
+      $("p#test").html(timeLeft + " seconds remaining"),
       // elem.innerHTML = ;
       timeLeft--;
     }
