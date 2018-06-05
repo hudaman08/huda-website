@@ -139,6 +139,4 @@ function startTimer () {
       })
     })
   })
-
-
 });

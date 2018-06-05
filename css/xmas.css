@@ -51,11 +51,16 @@ div.close{
 }
 
 div.overviewText{
+  padding: 2.5%;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: middle;
+/*
   width: 60%
   padding: 0% 2.5% 2.5% 2.5%;
   font-size: 20pt;
   font-weight: bold;
-  float: left;
+  float: left; */
 }
 
 .overviewText ul li{
@@ -261,4 +266,20 @@ div.winner-circle{
 
 .to-do{
   display: none;
+}
+
+@media all and (max-width:500px){
+  div.close{
+    font-size: 30pt;
+  }
+
+  div.overviewText{
+    font-size: 10pt;
+    text-align: middle;
+    font-weight: normal;
+}
+
+.overviewText ol li{
+  font-weight: normal;
+  font-size: 10pt;
 }

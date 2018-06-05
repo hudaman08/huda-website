@@ -58,3 +58,9 @@ div#overview {
   font-size: 20pt;
   text-align: center;
 }
+
+@media all and (max-width:500px){
+  div.text{
+    width: 60%;
+  }
+}

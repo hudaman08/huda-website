@@ -31,6 +31,10 @@ div.overviewText{
   text-align: middle;
 }
 
+div.overviewText li{
+  margin-bottom: 8px;
+}
+
 div.randomwrapper{
   width: 100%;
 }
@@ -170,5 +174,15 @@ div.quote {
   }
   div.quote-wrapper{
     margin: 0px 20px;
+  }
+
+  div.close{
+    font-size: 30pt;
+  }
+
+  div.overviewText{
+    font-size: 11pt;
+    text-align: middle;
+    font-weight: normal;
   }
 }

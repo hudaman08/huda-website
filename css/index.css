@@ -3,12 +3,16 @@ div.center{
   /*border: 2px solid black;*/
 }
 
+div.photoWrapper{
+    margin: 0 auto;
+    width: 30%;
+    float: left;
+}
+
 div.pic{
-  margin: 0 auto;
   /*border: 5px dashed blue;*/
-  width: 500px;
+  width: 100%;
   text-align: center;
-  float: left;
 }
 
 #profile-pic {
@@ -17,9 +21,60 @@ div.pic{
 
 div.aboutMe{
   float: right;
-  width: 60%;
+  width: 65%;
+  padding-right: 15px;
+}
+
+div.amHeader{
+  background-color:rgb(124, 126, 130);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18pt;
+  margin-bottom: 10px;
+  padding: 3px 0px;
+}
+
+.aboutMe p{
+  margin-left: 20px;
+  margin-bottom: 7px;
 }
 
 .icon {
   height: 15px
+}
+
+div.resumeWrapper{
+  margin-top: 15px;
+  width: calc(100%-30px);
+  padding: 0px 15px;
+}
+
+div.resume{
+  height: 600px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+@media all and (max-width:500px){
+  div.photoWrapper{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+
+  div.aboutMe{
+    float: none;
+    width: 100%;
+  }
+
+  div.resumeWrapper{
+    width: 100%;
+    padding: 0;
+  }
+
+  div.resume{
+    width: 100%;
+  }
 }
