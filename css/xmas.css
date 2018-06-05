@@ -19,49 +19,6 @@ p.float{
   float:left;
 }
 
-span.italics{
-  font-style: italic;
-}
-/*header stuff*/
-
-@media all and (max-width:500px){
-  /* FIXME: do something with nav */
-}
-
-
-nav{
-  background-color: darkblue;
-  width: 100%;
-  color: white;
-  /*float: right;*/
-  /*margin: 0 auto;*/
-  text-align: center;
-}
-
-nav ul{
-  list-style: none;
-  padding: 10px 0px;
-}
-
-nav li{
-  display: inline-block;
-  padding: 5px 10px;
-  border-right: 1px solid white;
-}
-
-nav li a{
-  text-decoration: none;
-  color: white;
-}
-
-nav li a:visited{
-  color: white;
-}
-
-li#left{
-  border-right: 0px solid white;
-}
-
 /*xmas section*/
 
 h2{
@@ -86,19 +43,30 @@ div.overview{
 
 div.close{
   float: right;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   text-align: center;
   cursor: pointer;
   font-size: 45pt;
 }
 
 div.overviewText{
-  padding: 2.5%;
+  width: 60%
+  padding: 0% 2.5% 2.5% 2.5%;
   font-size: 20pt;
   font-weight: bold;
-  text-align: middle;
+  float: left;
 }
+
+.overviewText ul li{
+  margin-bottom: 5px;
+}
+
+.overviewText ol li{
+  font-weight: normal;
+  font-size: 16pt;
+}
+
 div.intro-wrapper{
   width: 100%;
 }
@@ -294,46 +262,3 @@ div.winner-circle{
 .to-do{
   display: none;
 }
-
-/*footer stuff*/
-
-div.footer{
-  width: 100%;
-  background-color: gray;
-  margin: 0px;
-  /*border: 2px solid black;*/
-}
-
-div.footerleft{
-  float: left;
-  color: white;
-  font-weight: bold;
-  padding: 12.5px 0px 0px 20px;
-}
-
-div.social{
-  height: 30px;
-  width: 30px;
-  float: right;
-  border-radius: 30px;
-  background-color: darkblue;
-  color: white;
-  text-align: center;
-  vertical-align: center;
-  /* FIXME: align it center somehow */
-}
-
-div.social a{
-  text-decoration: none;
-  color: white;
-}
-
-div.social a:visited{
-  color: white;
-}
-
-div.social-wrapper{
-  float: right;
-  padding: 5px 20px 5px 0px;
-  /*border: 2px solid black;*/
-  /* FIXME: why is the bottom of my footer acting as a link?!? */

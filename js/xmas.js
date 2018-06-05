@@ -45,7 +45,7 @@ function startTimer () {
       new Audio("../audio/buzzer.mp3").play()
       doSomething();
     } else {
-      $("p#test").html(timeLeft + " seconds remaining"),
+      $("div#timer").html(timeLeft + " seconds remaining"),
       // elem.innerHTML = ;
       timeLeft--;
     }

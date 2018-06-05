@@ -1,135 +1,60 @@
-body {
-  font-family: "Arial",sans-serif;
-  /*background-image: url("images/tufts.png");
-  https://css-tricks.com/snippets/css/transparent-background-images -- to get to background opacity/*/
-}
-
-p{
-  margin: 0px;
-}
-.question {
-  color: red;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-div.clearfix{
-  clear: both;
-}
-
-h1 {
-  color: blue;
-  text-align: center;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-h2{
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  background-color: lightblue;
-}
-
-h3{
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-nav{
-  background-color: darkblue;
-  width: 100%;
-  color: white;
-  /*float: right;*/
-  /*margin: 0 auto;*/
-  text-align: center;
-}
-
-
-nav ul{
-  list-style: none;
-  padding: 10px 0px;
-
-}
-
-nav li{
-  display: inline-block;
-  padding: 5px 10px;
-  border-right: 1px solid white;
-}
-
-nav li a{
-  text-decoration: none;
-  color: white;
-}
-
-nav li a:visited{
-  color: white;
-}
-
-li#left{
-  border-right: 0px solid white;
-}
-
 div.bodywrapper{
 width: 100%
 }
 
 div.leftnav{
-width: 25%;
-background color: lightblue;
-border: 2px solid black;
+width: 20%;
+background-color: darkblue;
+height: 600px;
+padding: 10px;
+margin-right: 10px;
+margin-bottom: 15px;
+/* border: 2px solid black; */
 float: left;
+color: white;
+font-weight: bold;
+text-decoration: underline;
 }
 
-div.writingspace{
+div.title{
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+div.text{
   width: 75%;
-  background color: pink;
-  height: 800px;
+  background-color: rgb(237, 241, 247);
+  height: 600px;
+  padding: 10px;
   float: left;
+  overflow: auto;
+  margin-bottom: 15px;
 }
 
-
-div.footer{
-  width: 100%;
-  background-color: gray;
-  margin: 0px;
-  /*border: 2px solid black;*/
+div.writing {
+  display: none;
 }
 
-div.footerleft{
-  float: left;
-  color: white;
+.writing li {
+  margin: 0 0 10px 0;
+}
+
+.writing p {
+  margin: 0 0 10px 0;
+}
+
+.ssTitle {
   font-weight: bold;
-  padding: 12.5px 0px 0px 20px;
+  font-size: 14pt;
 }
 
-div.social{
-  height: 30px;
-  width: 30px;
-  float: right;
-  border-radius: 30px;
-  background-color: darkblue;
-  color: white;
+div#overview {
+  display: block;
+  font-size: 14pt;
+}
+
+#overviewTitle {
+  font-weight: bold;
+  font-size: 20pt;
   text-align: center;
-  vertical-align: center;
-  /* FIXME: align it center somehow */
-}
-
-div.social a{
-  text-decoration: none;
-  color: white;
-}
-
-div.social a:visited{
-  color: white;
-}
-
-div.social-wrapper{
-  float: right;
-  padding: 5px 20px 5px 0px;
-  /*border: 2px solid black;*/
-  /* FIXME: why is the bottom of my footer acting as a link?!? */
 }
