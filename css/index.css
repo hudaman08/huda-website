@@ -75,6 +75,7 @@ div.resume{
   }
 
   div.resume{
-    width: 85%;
+    width: 100%;
+    /* height: 800px; */
   }
 }
