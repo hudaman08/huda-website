@@ -176,8 +176,17 @@ div.quote {
     margin: 0px 20px;
   }
 
+  /* div.overview{
+    height: 80%;
+    width: 80%
+    top: 10%;
+    left: 10%;
+} */
+
   div.close{
     font-size: 30pt;
+      height: 50px;
+      width: 50px;
   }
 
   div.overviewText{
